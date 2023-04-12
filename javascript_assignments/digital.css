@@ -1,0 +1,35 @@
+.main{
+  display:flex;
+  width:1000px;
+  height:300px;
+  border:5px solid grey;
+  margin-left:200px;
+  box-shadow: 10px 5px 10px 20px grey;
+  background-color: #c6538c;
+}
+.hour{
+  font-size: 100px;
+}
+.mins{
+  font-size:100px;
+}
+.secs{
+  font-size:100px;
+}
+.semicolon{
+  font-size: 90px;
+}
+.semicolon2{
+  font-size: 90px;
+}
+.main p{
+  padding-left:70px;
+}
+h1{
+  text-align: center;
+  font-size:60px;
+  color: #4d88ff;
+}
+.AM{
+  font-size: 100px;
+}
