@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var Reading=505;
+      if (Reading>=1 && Reading<=100) {
+        var Read= Reading*2;
+        document.write("Reading is "+Read+" <br>")
+      }
+      else if(Reading>100 && Reading<=200){
+        var Reads=(Reading - 100)* 3.5 + (100*2);
+        document.write("Reading is "+Reads+" <br>")
+      }
+      else if (Reading>200 && Reading<=300) {
+        var Reeds=(Reading-200)*5.5 + (200-100)*3.5 + (100*2);
+        document.write("Reading is "+Reeds+" <br>")
+      }
+      else if (Reading>300 && Reading<=400) {
+        var Read=(Reading-300)*7.5 + (300-200)*5.5 + (200-100)*3.5 + (100*2);
+        document.write("Reading is "+Read+"<br>")
+      }
+      else if (Reading>400) {
+        var Read=(Reading-400)*12 + (400-300)*7.5 + (300-200)*5.5 + (200-100)*3.5 + (100*2);
+        document.write("Reading is "+Read+"<br>")
+      }
+    </script>
+  </body>
+</html>

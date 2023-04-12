@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    millisecs:<div id="result3">
+
+    </div>
+    <script type="text/javascript">
+      var dob=new Date();
+     dob.setDate(11);
+     dob.setMonth(3);
+     dob.setFullYear(2023);
+
+     d=dob.getDate();
+     m=dob.getMonth();
+     y=dob.getFullYear();
+
+     dob.setHours(13,0,0,0);
+
+     var dod=new Date();
+     dod.setDate(12);
+     dod.setMonth(3);
+     dod.setFullYear(2023);
+
+    d1=  dod.getDate();
+    m1=  dod.getMonth();
+    y1=  dod.getFullYear();
+    dod.setHours(13,0,0,0);
+
+
+      var diff=dod- dob
+      console.log(diff)
+      document.getElementById('result3').innerHTML+=diff;
+
+    </script>
+  </body>
+</html>

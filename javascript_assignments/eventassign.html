@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+      <label>rupees:</label>
+      <input type="text" id="money">
+      <select id="moneycon">
+      <option   value="dollar">dollar</option>
+      <option   value="Riyal">Riyal</option>
+      <option  value="euros">Euros</option>
+
+      </select>
+      <br>
+      <br>
+
+      <p id="result"></p>
+
+
+    </div>
+
+    <script type="text/javascript">
+      var x=document.getElementById("money")
+      var selector=document.getElementById("moneycon")
+      x.addEventListener("input", function(e){
+        selector.addEventListener("click",function(){
+          selector.addEventListener("change",function(){
+
+        var rupees=e.target.value;
+        console.log(selector.value)
+        var rupeestodollar=(rupees/84);
+        var rupeestoriyal=(rupees/22)
+        var rupeestoeuros=(rupees/88.8)
+
+        if(selector.value=="dollar"){
+          document.getElementById('result').innerHTML="The dollar money is "+rupeestodollar.toString();
+        }
+        if (selector.value=="Riyal") {
+          document.getElementById('result').innerHTML="The riyal money is "+rupeestoriyal.toString();
+
+        }
+        if (selector.value=="euros") {
+          document.getElementById('result').innerHTML="The euros money is "+rupeestoeuros.toString();
+
+        }
+
+      })
+      })
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    DOB:<span id="result1"></span><br>
+    DOD:<span id="result2"></span><br>
+    dif:<span id="result3"></span>
+
+    <script type="text/javascript">
+      var dob=new Date();
+     dob.setDate(23);
+     dob.setMonth(7);
+     dob.setFullYear(2000);
+
+     d=dob.getDate();
+     m=dob.getMonth();
+     y=dob.getFullYear();
+      document.getElementById('result1').innerHTML=d+"/"+m+"/"+y;
+
+     var dod=new Date();
+     dod.setDate(23);
+     dod.setMonth(7);
+     dod.setFullYear(2090);
+
+    d1=  dod.getDate();
+    m1=  dod.getMonth();
+    y1=  dod.getFullYear();
+   document.getElementById('result2').innerHTML=d1+"/"+m1+"/"+y1;
+
+      var diff=dod.getFullYear() - dob.getFullYear()
+      document.getElementById('result3').innerHTML+=diff
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+    <form action="/action_page.php">
+
+    <label for="name">UserName</label>
+    <input type="text" id="name" name="name" pattern="[a-zA-Z]+" required placeholder="Your username.."/>
+
+    <label for="pwd">Password</label>
+    <input type="password" id="pwd" name="pwd" pattern="[a-zA-z0-9]+" required placeholder="Your password.."/>
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" pattern="[789][0-9]+" required placeholder="Your phone.."/>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email.."/>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+    <option value="">none</option>
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+    </select>
+
+    <input type="submit" value="Submit">
+    </form>
+    </div>
+  </body>
+</html>

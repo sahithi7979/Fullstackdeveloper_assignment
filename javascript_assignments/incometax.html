@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var Income=1010000;
+      var age=52;
+      if (age<=60){
+        document.write("Is applicable")
+      }
+      else{
+        document.write("Not Applicable")
+      }
+      if (Income>0 && Income<=250000){
+        document.write("Nill")
+      }
+      else if (Income>=250001 && Income<=500000) {
+        document.write((5/100)*(Income - 250000))
+      }
+      else if(Income>=500001 && Income<=750000){
+        document.write(12500 + (10/100)*(Income - 500000))
+      }
+      else if(Income>=750001 && Income<=1100000){
+        document.write(37500 + (15/100)*(Income - 750000))
+      }
+      else{
+        document.write(75000 + (20/100)*(Income - 1000000))
+      }
+    </script>
+  </body>
+</html>

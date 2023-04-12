@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var num=0;
+    var id=setInterval(printer , 1000);
+    function printer() {
+      num=num+1;
+
+      if(num>=10)
+      {
+        clearInterval(id);
+      }
+    document.getElementById("myId").innerHTML+=num.toString()+' ';
+    }
+    </script>
+    <div id="myId"></div>
+
+  </body>
+</html>

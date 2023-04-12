@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function factorial(n)
+      {
+        var fact=1;
+        var i=n;
+        while(i>=1)
+        {
+          fact*=i
+          //document.writeln("fact*"+i+ "=" +fact*i+ "<br>");
+          i--;
+        }
+        return fact;
+      }
+      var output=factorial(6);
+      document.write("The factorial is "+output);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
