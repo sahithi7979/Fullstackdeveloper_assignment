@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amazon Create</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <style>
+    *{
+      margin: 0;
+      border: 0;
+    }
+      #submit{
+        background-color: yellow;
+        height: 40px;
+        width: 250px;
+      }
+      .firstform{
+        border: 3px solid black;
+        margin-left:auto;
+        margin-right:auto;
+        width:300px;
+        height:350px;
+        background-color: white;
+      }
+      .firstdiv{
+        margin: auto;
+      }
+      .menu-bar{
+        background: green;
+        text-align: center;
+      }
+      .menu-bar ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+      }
+      .menu-bar ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+      }
+      .menu-bar ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      .active,.menu-bar ul li:hover
+      {
+        background: #2bab0d;
+        border-radius: 3px;
+      }
+      .menu-bar .fa{
+        margin-right: 8px;
+      }
+      .sub-menu-1{
+        display: none;
+      }
+      .menu-bar ul li:hover .sub-menu-1{
+        display:block;
+        position:absolute;
+        background:green;
+        margin-top:15px;
+        margin-left:-15px;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul{
+        display: block;
+        margin: 10px;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul li{
+        width: 150px;
+        text-align: left;
+        border-bottom: 1px dotted white;
+        border-radius: 0;
+        padding: 10px;
+        background:transparent;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+      {
+        border-bottom: none;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+      {
+        color: purple;
+      }
+      iframe{
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body background="https://assets.aboutamazon.com/dims4/default/7e62688/2147483647/strip/true/crop/3600x2026+0+187/resize/1320x743!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Ff1%2F7b%2F3ed2751143879535cfdce931fa56%2F20160808primeairplaneinflight-28.JPG">
+    <div class="menu-bar">
+      <ul>
+      <li class="active"><a href="#"><i class='fa fa-home'></i>Home</a></li>
+      <li><a href="#"><i class='fa fa-user'></i>About Us</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">team</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class='fa fa-clone'></i>Services</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">team</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class='fa fa-users'></i>Clients</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">team</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class='fa fa-angellist'></i>Investors</a></li>
+      <li><a href="#"><i class='fa fa-inr'></i>Pricing</a></li>
+      <li><a href="#"><i class='fa fa-edit'></i>Training</a></li>
+      <li><a href="#"><i class='fa fa-phone'></i>Contact</a></li>
+    </ul>
+  </div>
+    <p align="center"><img src="https://amazon-blogs-brightspot-lower.s3.amazonaws.com/about/00/92/0260aab44ee8a2faeafde18ee1da/amazon-logo-inverse.svg" alt="Amazon"></p>
+    <h1 align="center">Create Account</h1>
+    <form class="firstform" action="" method="get" align="center" float:'right'>
+      <label for="Your name">Your name</label><br>
+      <input type="your name" name="" placeholder="FirstName or LastName"><br>
+      <label for="Mobilenumber">Mobilenumber</label><br>
+      <input type="Mobilenumber" name="" placeholder="Mobilenumber"><br>
+      <label for="EMAIL">email optional</label><br>
+      <input type="Email" name="" value=""><br>
+      <label for="password">password</label><br>
+      <input type="password" name="" placeholder="At least 6 Characters"><br>
+      <h6>Password Should Contain 6 characters</h6>
+      <p>By enrolling your mobile phone number,  Message and data rates may apply.
+</p>
+      <input id="submit" type="submit" name="" value="continue">
+    </form>
+     <p align="center">Already You have an Account?</p>
+     <form  action="amazonassesment.html" method="post" align="center">
+       <input type="submit" name="" value="Signin">
+     </form>
+  </body>
+</html>
